@@ -1,0 +1,136 @@
+
+/* Terms of use for background textures at http://www.grsites.com/terms/ */
+/* Terms of use for rose images: https://pixabay.com/en/service/terms/#usage */
+/* Sets background texture. */
+body{
+  background-image: url("src/red031.jpg");
+}
+
+/* Sets black background. */
+.main{
+  font-family: serif;
+  font-size: medium;
+  background: black;
+  text-align: left;
+  color: white;
+  width: 60%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+}
+
+/* Define and link to a downloaded font. */
+/* http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp */
+ @font-face{
+   font-family: Lucian;
+   src: url("src/Lucian Schoenschrift CAT.ttf");
+ }
+
+/* Sets cursive writing. */
+ #vcc-gnd{
+   font-family: Lucian;
+   color: white;
+   text-align: center;
+   font-size: 50px;
+ }
+
+/* Rose image in upper left corner. */
+ #roses{
+   position: fixed;
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+
+/* Div with black roses that make the unordered list of links. */
+ #blackrose{
+   position: fixed;
+   margin-top: 50px;
+ }
+
+/* Set background to links as black roses. */
+/* http://www.w3schools.com/cssref/css3_pr_background-size.asp */
+/* Center text in black roses. */
+/* http://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css */
+/* Vertical alignment of li elements: http://stackoverflow.com/questions/6703228/how-to-force-a-list-to-be-vertical-using-html-css */
+#blackrose li{
+  display: block;
+  border-radius: 50%;
+  width: 150px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Lucian;
+  font-size: 30px;
+  font-weight: 500;
+  background: url("src/black-925638_640.jpg");
+  background-size: 120%;
+  margin-bottom: 7px;
+}
+
+/* Colors description text white, provides small margin. */
+div.main p {
+  margin: 5%;
+ }
+
+/* A simple black line as a separator. */
+#blackline{
+  margin: 5%;
+  height: 2px;
+  background-color: black;
+}
+
+/* Another separating black line. */
+#blackline2{
+  margin: 2%;
+  height: 2px;
+  background-color: black;
+}
+
+/* Cosplay part. */
+#cosplay{
+  font-family: Lucian;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Link text will be white, unless it is current, when
+ it will be red. */
+#blackrose li a{
+  color: white;
+}
+
+/* Setting active link color:
+http://www.w3schools.com/cssref/sel_hover.asp */
+#blackrose li a.active{
+  color: #B20000;
+}
+
+/* Some code to format the carousel */
+/* From http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel2&stacked=h */
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;}
+  .carousel-inner{
+   max-height: 450px !important;
+}
+
+#blackstripe-left, #blackstripe-right{
+  position: fixed;
+  background: black;
+  opacity: 0.3;
+  width: 10%;
+  top: 0px;
+  bottom: 0px;
+}
+
+#blackstripe-left{
+  left: 0px;
+}
+
+#blackstripe-right{
+ right: 0px;
+}
