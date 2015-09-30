@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+  File:  /~tkuczyns/GUI_Assign1/hello.html
+  91.461 Assignment:  Creating Your First Web Page
+  Therese M. Kuczynski, UMass Lowell Computer Science Student, therese_kuczynski@student.uml.edu
+  Copyright (c) 2015 by Therese M. Kuczynski.  All rights reserved.  May be freely
+    copied or excerpted for educational purposes with credit to the author.
+  updated by TMK on September 10, 2015 at 9:00 PM
+-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <!-- Used w3schools.com to reference how to include external
+    stylesheets. http://www.w3schools.com/css/css_howto.asp -->
+    <link rel="stylesheet" type="text/css" href="hello.css">
+    <title>Therese's GUI Home</title>
+</head>
+
+<!-- Wanted to use this with Javascript to highlight current tab; will do for
+next week. -->
+<body id="about-me">
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="js/boostrap.js"></script>
+
+<!-- Navbar from http://www.w3schools.com/bootstrap/bootstrap_case_navigation.asp -->
+<nav class="navbar navbar-static-top navbar-circuits">
+    <div class="container-fluid">
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="hello.html">About Me</a></li>
+                <li><a href="happy.html">Assignment 3</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+
+<div class="container">
+    <!--The side and bottom borders. -->
+    <div id="far-left"></div>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="bottom"></div>
+
+
+    <div class="inside">
+
+        <div id="about">
+            <div class="span6">
+                <figure id="pic">
+                    <!-- resize learned from https://wpbeaches.com/make-images-scale-responsive-web-design/ -->
+                    <img src="src/BirthdayParty.jpg" class="img-responsive" alt="Birthday Party"
+                         style="float:right; max-width: 100%;">
+                    <figcaption>Celebrating my birthday with some of my best friends.</figcaption>
+                </figure>
+            </div>
+            <br><br>
+
+            <div class="span6">
+                <div id="description">
+                    <h4>About Me: </h4>
+
+                    <p>I attended nursing school for two years and worked as a certified nursing assistant for
+                        an additional two before coming to UML for computer science. I currently work at New
+                        England Rehabilitation Hospital up to 12 hours a week as needed.</p>
+
+                    <p>Computer science goals include working in research, healthcare, or defense, and getting
+                        a paper published. I would like to work in industry and get a Master's degree at night.</p>
+
+                    <p>I plan to graduate in Winter 2016. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

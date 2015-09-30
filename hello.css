@@ -1,0 +1,84 @@
+
+/* Terms of use for background textures at http://www.grsites.com/terms/ */
+
+/* Sets background and border. */
+body{
+  border-width: 5%;
+  background-image: url("src/stars.gif");
+}
+
+/* https://css-tricks.com/body-border/ */
+/* This code provides the gray border on left and right sides, and bottom. */
+#bottom, #left, #right, #far-left {
+  position: fixed;
+}
+
+#bottom {
+  background: #888888;
+  left: 0; right: 0;
+  height: 15px;
+}
+
+#bottom { bottom: 0; }
+
+#left, #right, #far-left {
+  background: #121713;
+  top: 0; bottom: 0;
+  /*width: 10px; */
+}
+  #left { left: 5%; bottom: 20; top: 50; width: 55%;}
+  #far-left {left: 0%; width: 5px; background: #888888; }
+  #right {right: 0%; width: 5px; background: #888888; }
+/* End of code from css-tricks.com */
+
+#about{
+  padding: 20px;
+}
+
+/* Colors description text white, provides small margin. */
+div#description p {
+  margin: 5%;
+  color: white;
+ }
+
+/* Transparency and box-shadow tutorials: */
+/*http://www.w3schools.com/css/css_image_transparency.asp */
+/* http://www.cssmatic.com/box-shadow */
+div#description{
+  -webkit-box-shadow: 15px 15px 30px -2px white;
+  -moz-box-shadow: 15px 15px 30px -2px white;
+  box-shadow: 15px 15px 30px -2px white;
+  margin: 30px;
+  max-width: 50%;
+  border: 1px solid black;
+  opacity: 0.3;
+  filter: alpha(opacity=90);
+  background-color: black;
+}
+
+
+#pic{
+  -webkit-box-shadow: 0px -5px 30px 15px lightgray;
+  -moz-box-shadow: 0px -5px 30px 15px lightgray;
+  box-shadow: 0px -5px 30px 15px lightgray;
+  float: right;
+  width: 30%;
+  font-size: small;
+  color: white;
+  text-align: center;
+}
+
+div#description h4{
+  margin: 5%;
+  color: white;
+}
+
+/* Setting navbar background to circuits: */
+/* http://stackoverflow.com/questions/29619346/setting-background-image-of-a-navigation-bar-bootstrap */
+.navbar-circuits{
+  margin-left: 0em;
+  margin-right: 0em;
+  background-image: url("src/circuits3.jpg");
+  background-repeat: repeat-x;
+  color: black;
+}
